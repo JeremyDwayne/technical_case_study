@@ -33,33 +33,24 @@ public class LandAnalysis {
     // String single = "0 292 399 307";
     // String[] arr  = {"48 192 351 207", "48 392 351 407", "120 52 135 547", "260 52 275 547"};
     var line = "";
+    System.out.println("Example input format: 48 192 351 207, 48 392 351 407, 120 52 135 547, 260 52 275 547");
+    System.out.print("Please enter coordinates for barren land: ");
     while (!(line = scan.nextLine()).equals("q")) {
       String[] arr = line.split(", ");
       for (var a : arr){
         toggleBarronLand(parseCoords(a));
       }
 
-      // for (var n : fertileArea) System.out.print(n.toString);
       var count = 0;
       for (var i : fertileArea) {
         for (var j=0; j < i.length; j++) {
           if (i[j] == 0){
             count++; 
           }
-          // System.out.print(i[j]);
         }
-        // System.out.println();
       }
       System.out.println(count + "m²");
     }
-
-
-    // System.out.println("\nString Array");
-    // for (var r : coords) {
-    //   for (var n : r) System.out.print(n + " ");
-    //   System.out.println();
-    // }
-
   }
 
 
