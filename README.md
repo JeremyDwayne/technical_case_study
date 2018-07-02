@@ -3,7 +3,7 @@
 ### Barren Land Analysis
 - Written using Java 10, but I believe most features are Java 8 compatible
 - Compile and run the application
-  * ```
+  ```
     $ cd landanalysis
     $ javac LandAnalysis.java
     $ java LandAnalysis
