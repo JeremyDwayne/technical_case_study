@@ -1,6 +1,18 @@
 Case Study for Target Engineering
 
-1. myRetail API
+1. Barren Land Analysis
+  - run `java LandAnalysis`
+  - enter rectangles of barren land on prompt using the following format:
+    * `{"48 192 351 207", "48 392 351 407", "120 52 135 547", "260 52 275
+      547"}`
+    * curly braces and commas are optional, but coordinates must be between double
+      quotes and space seperated in (x1 y1 x2 y2) ordering
+  - Utilizes a BFS/Flood Fill/Forest Fire algorithm to detect fertile land
+  - Probably can be optimized
+
+2. myRetail API
+  - Not finished, decided to focus on other problem as I only
+   needed to do one
   - First time using Java Spring, my implementation of the API is rather poor.
   - To see a better example of my ability to work with API's see the project
     [OTN_Dashboard](https://github.com/JeremyDwayne/OTN_Dashboard) which
@@ -12,10 +24,3 @@ Case Study for Target Engineering
   curl -i -X POST -H "Content-Type:application/json" -d "{ \"value\" : \"25.00\", \"currencyCode\" : \"USD\", \"name\" : \"Harry Potter\" }" http://localhost:8080/products/
   ```
 
-2. Barren Land Analysis
-  - After closer inspection, I realized I should be using a breadth first search
-    to calculate connected fertile land. My implementation is very inefficient and
-    simply calculates the total fertile land not individually sectioned land.
-  - Also, I re-read the instructions and noticed I only needed to do one of
-    these assignments, and decided to put this one on pause to work on the
-    myRetail API further.
