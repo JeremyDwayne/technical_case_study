@@ -3,9 +3,11 @@
 ### Barren Land Analysis
 - Written using Java 10, but I believe most features are Java 8 compatible
 - Compile and run the application
-  * `cd landanalysis`
-  * `javac LandAnalysis.java`
-  * `java LandAnalysis`
+  * ```
+    $ cd landanalysis
+    $ javac LandAnalysis.java
+    $ java LandAnalysis
+  ```
 - Enter rectangles of barren land on prompt using the following format:
   * `{"48 192 351 207", "48 392 351 407", "120 52 135 547", "260 52 275
     547"}`
