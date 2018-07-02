@@ -22,7 +22,7 @@
 - First time using Java Spring, my implementation of the API is minimal and not
   to spec.
 - Create a data folder `mkdir myRetail/data/db`
-- Start up the mongodb daemon with `mongod --dbpath ./myRetail/data/db`
+- Start up the mongodb daemon with `mongod --dbpath myRetail/data/db`
 - Start up the java application using IntelliJ
 - Here is an example POST curl to create a product. You can also do GET, PUT,
   PATCH, DELETE commands on these objects.
