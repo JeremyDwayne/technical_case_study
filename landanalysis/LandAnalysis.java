@@ -80,7 +80,8 @@ public class LandAnalysis {
 
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    System.out.println("Example input format: " + "{\"48 192 351 207\", \"48 392 351 407\", \"120 52 135 547\", \"260 52 275 547\"}");
+    System.out.println("Example input format: " +
+        "{\"48 192 351 207\", \"48 392 351 407\", \"120 52 135 547\", \"260 52 275 547\"}");
 
     // Regex to catch anything between two quotes
     // Not that robust of a regex: it won't catch outlier cases 
@@ -118,13 +119,13 @@ public class LandAnalysis {
       if (fertileAreas.size() == 0) System.out.print(0); 
       else {
         Collections.sort(fertileAreas);
-        System.out.print(fertileAreas.stream()
+        System.out.println(fertileAreas.stream()
             .map(Object::toString)
             .collect(Collectors.joining(" "))
         );
       }
 
-      System.out.print("\nPlease enter coordinates for barren land: ");
+      System.out.print("Please enter coordinates for barren land: ");
     }
   }
 
