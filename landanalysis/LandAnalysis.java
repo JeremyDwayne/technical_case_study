@@ -119,9 +119,8 @@ public class LandAnalysis {
       if (fertileAreas.size() == 0) System.out.print(0); 
       else {
         Collections.sort(fertileAreas);
-        System.out.println(fertileAreas.stream()
-            .map(Object::toString)
-            .collect(Collectors.joining(" "))
+        System.out.println(
+          fertileAreas.stream().map(Object::toString).collect(Collectors.joining(" "))
         );
       }
 
