@@ -116,7 +116,7 @@ public class LandAnalysis {
       }
 
       // Sort and print final fertile land areas
-      if (fertileAreas.size() == 0) System.out.print(0); 
+      if (fertileAreas.size() == 0) System.out.println(0); 
       else {
         Collections.sort(fertileAreas);
         System.out.println(
